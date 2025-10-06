@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "code": "VAC2025",
+        "project": "Vacation Fund",
+        "target": 1000.0,
+        "actual": 200.0
+    },
+    {
+        "id": 2,
+        "code": "EDU2025",
+        "project": "Certification Fund",
+        "target": 1000.0,
+        "actual": 200.0
+    }
+]
