@@ -20,17 +20,6 @@ def load_savings():
             return [{"actual": 0, "target": 1000, "project": "Default"}]
 
 
-def get_latest_savings():
-    if not os.path.exists(SAVINGS_FILE):
-        return {"actual": 0, "target": 1000}
-    with open(SAVINGS_FILE, "r") as f:
-        data = json.load(f)
-        if isinstance(data, list) and data:
-            return data[-1]
-        else:
-            return {"actual": 0, "target": 1000}
-
-
 def show_progress():
     print("\nShowing savings progress:")
     data = load_savings()
